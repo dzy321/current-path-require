@@ -4,5 +4,6 @@
 
 ## Use
  
- - `var cpr = require('current-path-require');`
+ - `var cpr = require('current-path-require')('/usr/develop');`
+    or `var cpr = require('current-path-require')();  //default is process.cwd();` 
  - `var xxx = cpr('xxx')`

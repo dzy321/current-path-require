@@ -1,15 +1,17 @@
 var relative = require('require-relative');
 var modules = {};
-var currentPath = process.cwd();
-module.exports = function (name) {
-  var mdl = modules[name];
-  if (mdl === undefined) {
-    try {
-      mdl = relative(name, currentPath);
-    } catch (e) {
-      mdl = require(name);
+module.exports = function (currentPath) {
+  currentPath = currentPath || process.cwd();
+  return function (name) {
+    var mdl = modules[name];
+    if (mdl === undefined) {
+      try {
+        mdl = relative(name, currentPath);
+      } catch (e) {
+        mdl = require(name);
+      }
+      modules[name] = mdl;
     }
-    modules[name] = mdl;
+    return mdl;
   }
-  return mdl;
 }

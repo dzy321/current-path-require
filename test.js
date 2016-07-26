@@ -1,2 +1,2 @@
-var cpr = require('./');
-cpr('xxx')
+var cpr = require('./')();
+cpr('require-relative')
