@@ -1,0 +1,22 @@
+{
+  "name": "current-path-require",
+  "version": "0.1.0",
+  "description": "require modules from current path",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzy321/current-path-require.git"
+  },
+  "keywords": [
+    "require"
+  ],
+  "author": "wy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzy321/current-path-require/issues"
+  },
+  "homepage": "https://github.com/dzy321/current-path-require#readme"
+}
