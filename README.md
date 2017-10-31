@@ -1,4 +1,7 @@
 ## Features
+
+![](https://img.shields.io/npm/v/current-path-require.svg?style=flat)
+
 - require from current path 
 - if not found in first step,require from current modules
 
